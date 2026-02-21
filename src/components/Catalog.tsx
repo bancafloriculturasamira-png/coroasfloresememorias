@@ -14,7 +14,7 @@ const Catalog = ({ images }: CatalogProps) => {
     {
       image: images.coroa1,
       title: "Coroa Imperial",
-      description: "Arranjo majestoso com rosas brancas, lírios e folhagens nobres. Perfeito para homenagens especiais.",
+      description: "Arranjo majestoso com rosas vermelhas, gerberas, girassois, anturios, lírios e folhagens nobres. Perfeito para homenagens especiais.",
       price: "R$ 299",
       tag: "Mais Vendida",
     },
