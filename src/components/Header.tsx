@@ -22,13 +22,13 @@ const Header = () => {
 
           <Button size="sm" className="gap-2">
             <Phone className="w-4 h-4" />
-            <span className="hidden sm:inline">(11) 99999-9999</span>
+            <span className="hidden sm:inline">(11) 91388-8722
+
+            </span>
             <span className="sm:hidden">Ligar</span>
           </Button>
         </div>
       </div>
-    </header>
-  );
-};
+    </header>);};
 
 export default Header;

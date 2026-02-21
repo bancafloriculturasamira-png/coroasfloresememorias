@@ -25,7 +25,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">Telefone / WhatsApp</h3>
-                  <p className="text-primary-foreground/70">(11) 99999-9999</p>
+                  <p className="text-primary-foreground/70">(11) 91322-8722</p>
                 </div>
               </div>
 
@@ -56,35 +56,35 @@ const Contact = () => {
             <form className="space-y-4">
               <div>
                 <label className="block text-sm font-medium mb-2">Nome Completo</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  placeholder="Seu nome"
-                />
+                  placeholder="Seu nome" />
+
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Telefone / WhatsApp</label>
-                <input 
-                  type="tel" 
+                <input
+                  type="tel"
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  placeholder="(11) 99999-9999"
-                />
+                  placeholder="(11) 99999-9999" />
+
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Local de Entrega</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  placeholder="Cidade, Estado ou Cemitério"
-                />
+                  placeholder="Cidade, Estado ou Cemitério" />
+
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Mensagem (Opcional)</label>
-                <textarea 
+                <textarea
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
                   rows={3}
-                  placeholder="Detalhes adicionais..."
-                />
+                  placeholder="Detalhes adicionais..." />
+
               </div>
               <Button type="submit" size="lg" className="w-full gap-2">
                 <MessageCircle className="w-5 h-5" />
@@ -94,8 +94,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Contact;
