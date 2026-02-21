@@ -10,10 +10,10 @@ const Footer = () => {
               <Flower2 className="w-8 h-8 text-accent" />
               <span className="font-serif text-xl font-bold">Flores & Memórias</span>
             </a>
-            <p className="text-background/70 leading-relaxed mb-6 max-w-md">
-              Há mais de 15 anos prestando homenagens com carinho e respeito. 
-              Entendemos a delicadeza de cada momento e cuidamos de cada detalhe 
-              para expressar seus sentimentos.
+            <p className="text-background/70 leading-relaxed mb-6 max-w-md">Há anos prestando homenagens com carinho e respeito. Entendemos a delicadeza de cada momento e cuidamos de cada detalhe para expressar seus sentimentos.
+
+
+
             </p>
             <div className="flex items-center gap-2 text-background/60 text-sm">
               <Heart className="w-4 h-4 text-accent" fill="currentColor" />
@@ -47,11 +47,12 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-background/70">
                 <Phone className="w-4 h-4 text-accent" />
-                <span>(11) 99999-9999</span>
+                <span>(11) 91322-8722</span>
               </li>
               <li className="flex items-center gap-3 text-background/70">
                 <Mail className="w-4 h-4 text-accent" />
-                <span>contato@floresememorias.com.br</span>
+                <span>
+                </span>
               </li>
               <li className="flex items-start gap-3 text-background/70">
                 <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
@@ -65,8 +66,7 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Flores & Memórias. Todos os direitos reservados.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
 };
 
 export default Footer;
