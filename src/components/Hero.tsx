@@ -9,10 +9,10 @@ const Hero = ({ heroImage }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+        style={{ backgroundImage: `url(${heroImage})` }}>
+
         <div className="absolute inset-0 bg-hero-gradient" />
       </div>
 
@@ -50,11 +50,12 @@ const Hero = ({ heroImage }: HeroProps) => {
               <p className="text-primary-foreground/70 text-sm">Atendimento</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl font-serif font-bold text-accent">2h</p>
+              <p className="text-3xl font-serif font-bold text-accent">1h</p>
               <p className="text-primary-foreground/70 text-sm">Entrega*</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl font-serif font-bold text-accent">15+</p>
+              <p className="text-3xl font-serif font-bold text-accent">ENTREGA
+              </p>
               <p className="text-primary-foreground/70 text-sm">Anos</p>
             </div>
           </div>
@@ -67,8 +68,7 @@ const Hero = ({ heroImage }: HeroProps) => {
           <div className="w-1.5 h-3 bg-primary-foreground/60 rounded-full" />
         </div>
       </div>
-    </section>
-  );
+    </section>);
 };
 
 export default Hero;
