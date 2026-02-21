@@ -56,7 +56,8 @@ const Hero = ({ heroImage }: HeroProps) => {
             <div className="text-center">
               <p className="text-3xl font-serif font-bold text-accent">ENTREGA
               </p>
-              <p className="text-primary-foreground/70 text-sm">Anos</p>
+              <p className="text-primary-foreground/70 text-sm">RÁPIDA
+              </p>
             </div>
           </div>
         </div>
@@ -68,7 +69,6 @@ const Hero = ({ heroImage }: HeroProps) => {
           <div className="w-1.5 h-3 bg-primary-foreground/60 rounded-full" />
         </div>
       </div>
-    </section>);
-};
+    </section>);};
 
 export default Hero;
