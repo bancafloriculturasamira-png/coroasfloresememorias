@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     name: "Ana Costa",
-    location: "Belo Horizonte, MG",
+    location: "São Paulo, SP",
     text: "As flores estavam impecáveis e a entrega foi muito rápida. Recomendo de olhos fechados para quem precisa desse serviço.",
     rating: 5,
   },
