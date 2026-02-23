@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     name: "João Santos",
-    location: "Rio de Janeiro, RJ",
+    location: "São Paulo, SP",
     text: "Atendimento 24 horas fez toda diferença. Precisei às 3h da manhã e fui atendido prontamente. Muito obrigado pelo carinho.",
     rating: 5,
   },
