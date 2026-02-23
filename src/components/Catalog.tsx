@@ -27,7 +27,7 @@ const Catalog = ({ images }: CatalogProps) => {
     {
       image: images.coroa3,
       title: "Coroa Eterna Saudade",
-      description: "Arranjo tradicional com flores mistas em tons suaves, simbolizando amor eterno.",
+      description: "Composição de rosas, lírios e antúrios. Perfeito para homenagens.",
       price: "R$ 199",
     },
     {
