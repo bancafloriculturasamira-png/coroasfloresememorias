@@ -28,7 +28,7 @@ const Catalog = ({ images }: CatalogProps) => {
       image: images.coroa3,
       title: "Coroa Eterna Saudade",
       description: "Composição de rosas, lírios e antúrios. Perfeito para homenagens.",
-      price: "R$ 199",
+      price: "R$ 900",
     },
     {
       image: images.coroa4,
