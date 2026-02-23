@@ -21,7 +21,7 @@ const Catalog = ({ images }: CatalogProps) => {
     {
       image: images.coroa2,
       title: "Coroa Serenidade",
-      description: "Composição delicada com crisântemos brancos e gérberas, transmitindo paz e tranquilidade.",
+      description: "Composição delicada com crisântemos brancos, rosas, lirios, anturios e gérberas, transmitindo paz e tranquilidade.",
       price: "R$ 249",
     },
     {
