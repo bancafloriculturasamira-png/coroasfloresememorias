@@ -33,7 +33,7 @@ const Catalog = ({ images }: CatalogProps) => {
     {
       image: images.coroa4,
       title: "Coroa Celestial",
-      description: "Design sofisticado com orquídeas e rosas, para uma despedida elegante e memorável.",
+      description: "Design sofisticado com orquídeas, para uma despedida elegante e memorável.",
       price: "R$ 399",
       tag: "Premium",
     },
