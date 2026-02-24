@@ -46,7 +46,7 @@ const Catalog = ({ images }: CatalogProps) => {
       image: images.coroa5,
       title: "Coroa Gratidão",
       description: "Arranjo delicado com rosas brancas e rosadas, crisântemos e folhagens verdes, transmitindo gratidão e carinho.",
-      price: "R$ 350",
+      price: "R$ 300",
     },
     {
       image: images.coroa6,
