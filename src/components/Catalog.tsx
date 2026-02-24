@@ -6,6 +6,11 @@ interface CatalogProps {
     coroa2: string;
     coroa3: string;
     coroa4: string;
+    coroa5: string;
+    coroa6: string;
+    coroa7: string;
+    coroa8: string;
+    coroa9: string;
   };
 }
 
@@ -36,6 +41,37 @@ const Catalog = ({ images }: CatalogProps) => {
       description: "Design sofisticado com orquídeas, para uma despedida elegante e memorável.",
       price: "R$ 1.635",
       tag: "Premium",
+    },
+    {
+      image: images.coroa5,
+      title: "Coroa Gratidão",
+      description: "Arranjo delicado com rosas brancas e rosadas, crisântemos e folhagens verdes, transmitindo gratidão e carinho.",
+      price: "R$ 350",
+    },
+    {
+      image: images.coroa6,
+      title: "Coroa Eternidade",
+      description: "Composição marcante com rosas vermelhas e lírios brancos, simbolizando amor eterno e respeito.",
+      price: "R$ 500",
+    },
+    {
+      image: images.coroa7,
+      title: "Coroa Paz Eterna",
+      description: "Arranjo todo em flores brancas — lírios, rosas e mosquitinhos — representando pureza e serenidade.",
+      price: "R$ 600",
+    },
+    {
+      image: images.coroa8,
+      title: "Coroa Nobreza",
+      description: "Combinação elegante de orquídeas roxas e brancas com rosas, para uma homenagem sofisticada.",
+      price: "R$ 750",
+    },
+    {
+      image: images.coroa9,
+      title: "Coroa Majestade",
+      description: "Arranjo grandioso com girassóis e gérberas vermelhas, vibrante e imponente para homenagens marcantes.",
+      price: "R$ 1.200",
+      tag: "Destaque",
     },
   ];
 
