@@ -32,9 +32,15 @@ const ProductCard = ({ image, title, description, price, tag }: ProductCardProps
             <p className="text-sm text-muted-foreground">A partir de</p>
             <p className="text-2xl font-serif font-bold text-primary">{price}</p>
           </div>
-          <Button size="sm" className="gap-2">
-            <ShoppingCart className="w-4 h-4" />
-            Encomendar
+          <Button size="sm" className="gap-2" asChild>
+            <a
+              href={`https://wa.me/5511913228722?text=${encodeURIComponent(`Olá! Tenho interesse na ${title} - ${price}. Gostaria de mais informações.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ShoppingCart className="w-4 h-4" />
+              Encomendar
+            </a>
           </Button>
         </div>
       </div>
