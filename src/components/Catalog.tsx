@@ -70,7 +70,7 @@ const Catalog = ({ images }: CatalogProps) => {
       image: images.coroa9,
       title: "Coroa Majestade",
       description: "Arranjo grandioso com girassóis e gérberas vermelhas, vibrante e imponente para homenagens marcantes.",
-      price: "R$ 1.200",
+      price: "R$ 600",
       tag: "Destaque",
     },
   ];
