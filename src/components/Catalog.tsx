@@ -58,7 +58,7 @@ const Catalog = ({ images }: CatalogProps) => {
       image: images.coroa7,
       title: "Coroa Paz Eterna",
       description: "Arranjo todo em flores brancas, rosas e crisantemos — representando pureza e serenidade.",
-      price: "R$ 600",
+      price: "R$ 300",
     },
     {
       image: images.coroa8,
