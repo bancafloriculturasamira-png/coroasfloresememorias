@@ -29,9 +29,9 @@ const Hero = ({ heroImage }: HeroProps) => {
             <span className="block text-accent mt-2">para Momentos de Despedida</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            Expressamos sua homenagem com arranjos florais delicados e elegantes. 
-            Entrega rápida em todo o Brasil com o cuidado que o momento exige.
+          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: "0.3s" }}>Expressamos sua homenagem com arranjos florais delicados e elegantes. Entrega rápida, com o cuidado que o momento exige.
+
+
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
