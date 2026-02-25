@@ -64,7 +64,7 @@ const Catalog = ({ images }: CatalogProps) => {
       image: images.coroa8,
       title: "Coroa Nobreza",
       description: "Combinação de girassol e crisantemos amarelos, para uma homenagem sofisticada.",
-      price: "R$ 750",
+      price: "R$ 600",
     },
     {
       image: images.coroa9,
