@@ -63,7 +63,7 @@ const Catalog = ({ images }: CatalogProps) => {
     {
       image: images.coroa8,
       title: "Coroa Nobreza",
-      description: "Combinação elegante de orquídeas roxas e brancas com rosas, para uma homenagem sofisticada.",
+      description: "Combinação de girassol e crisantemos amarelos, para uma homenagem sofisticada.",
       price: "R$ 750",
     },
     {
