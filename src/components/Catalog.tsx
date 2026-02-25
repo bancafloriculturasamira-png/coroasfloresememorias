@@ -52,7 +52,7 @@ const Catalog = ({ images }: CatalogProps) => {
       image: images.coroa6,
       title: "Coroa Eternidade",
       description: "Composição marcante com rosas, gerberas, girassol e lírios brancos, simbolizando amor eterno e respeito.",
-      price: "R$ 500",
+      price: "R$ 900",
     },
     {
       image: images.coroa7,
