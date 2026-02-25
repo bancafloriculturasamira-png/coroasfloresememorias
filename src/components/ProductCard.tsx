@@ -13,16 +13,16 @@ const ProductCard = ({ image, title, description, price, tag }: ProductCardProps
   return (
     <div className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
       <div className="relative aspect-square overflow-hidden">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        {tag && (
-          <span className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
-            {tag}
-          </span>
-        )}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+
+        {tag
+
+
+
+        }
       </div>
       <div className="p-6 space-y-4">
         <h3 className="font-serif text-xl font-semibold text-card-foreground">{title}</h3>
@@ -38,8 +38,8 @@ const ProductCard = ({ image, title, description, price, tag }: ProductCardProps
           </Button>
         </div>
       </div>
-    </div>
-  );
+    </div>);
+
 };
 
 export default ProductCard;
