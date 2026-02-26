@@ -17,6 +17,13 @@ import coroaEternidade from "@/assets/coroa-eternidade.jpg";
 import coroaPazEterna from "@/assets/coroa-paz-eterna.jpg";
 import coroaNobreza from "@/assets/coroa-nobreza.jpg";
 import coroaMajestade from "@/assets/coroa-majestade.jpg";
+import coroaEsperanca from "@/assets/coroa-esperanca.jpg";
+import coroaHarmonia from "@/assets/coroa-harmonia.jpg";
+import coroaDignidade from "@/assets/coroa-dignidade.jpg";
+import coroaPureza from "@/assets/coroa-pureza.jpg";
+import coroaResplendor from "@/assets/coroa-resplendor.jpg";
+import coroaTernura from "@/assets/coroa-ternura.jpg";
+import coroaGloria from "@/assets/coroa-gloria.jpg";
 
 const Index = () => {
   return (
@@ -35,6 +42,13 @@ const Index = () => {
             coroa7: coroaPazEterna,
             coroa8: coroaNobreza,
             coroa9: coroaMajestade,
+            coroa10: coroaEsperanca,
+            coroa11: coroaHarmonia,
+            coroa12: coroaDignidade,
+            coroa13: coroaPureza,
+            coroa14: coroaResplendor,
+            coroa15: coroaTernura,
+            coroa16: coroaGloria,
           }}
         />
         <HowItWorks />
