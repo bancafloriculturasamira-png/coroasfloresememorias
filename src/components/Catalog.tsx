@@ -11,6 +11,13 @@ interface CatalogProps {
     coroa7: string;
     coroa8: string;
     coroa9: string;
+    coroa10: string;
+    coroa11: string;
+    coroa12: string;
+    coroa13: string;
+    coroa14: string;
+    coroa15: string;
+    coroa16: string;
   };
 }
 
@@ -72,6 +79,51 @@ const Catalog = ({ images }: CatalogProps) => {
       description: "Coroa de flores brancas, rosas e crisantemos. Homenagem imponente e marcante.",
       price: "R$ 600",
       tag: "Destaque",
+    },
+    {
+      image: images.coroa10,
+      title: "Coroa Esperança",
+      description: "Arranjo delicado com rosas cor-de-rosa, lírios brancos e folhagens verdes, simbolizando esperança e renovação.",
+      price: "R$ 350",
+    },
+    {
+      image: images.coroa11,
+      title: "Coroa Harmonia",
+      description: "Composição elegante com orquídeas roxas e crisântemos brancos, transmitindo harmonia e paz interior.",
+      price: "R$ 500",
+      tag: "Exclusiva",
+    },
+    {
+      image: images.coroa12,
+      title: "Coroa Dignidade",
+      description: "Arranjo clássico com rosas vermelhas e brancas, cravos e folhagens exuberantes para uma homenagem digna.",
+      price: "R$ 700",
+    },
+    {
+      image: images.coroa13,
+      title: "Coroa Pureza",
+      description: "Composição toda em rosas brancas e mosquitinhos, representando pureza e leveza na despedida.",
+      price: "R$ 350",
+    },
+    {
+      image: images.coroa14,
+      title: "Coroa Resplendor",
+      description: "Arranjo vibrante com girassóis e gérberas laranjas, irradiando luz e energia em homenagem à vida.",
+      price: "R$ 800",
+      tag: "Premium",
+    },
+    {
+      image: images.coroa15,
+      title: "Coroa Ternura",
+      description: "Composição suave com rosas cor-de-rosa, margaridas brancas e flores delicadas, expressando carinho e ternura.",
+      price: "R$ 450",
+    },
+    {
+      image: images.coroa16,
+      title: "Coroa Glória",
+      description: "Arranjo grandioso com rosas vermelhas, lírios brancos e folhagens nobres para uma homenagem marcante.",
+      price: "R$ 1.200",
+      tag: "Luxo",
     },
   ];
 
