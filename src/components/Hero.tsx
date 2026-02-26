@@ -35,8 +35,8 @@ const Hero = ({ heroImage }: HeroProps) => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <Button size="lg" variant="accent" className="text-lg px-8 py-6">
-              Ver Catálogo
+            <Button size="lg" variant="accent" className="text-lg px-8 py-6" asChild>
+              <a href="#catalogo">Ver Catálogo</a>
             </Button>
             <Button size="lg" variant="hero" className="text-lg px-8 py-6" asChild>
               <a href="tel:+5511913228722">
