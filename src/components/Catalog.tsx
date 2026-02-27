@@ -115,14 +115,14 @@ const Catalog = ({ images }: CatalogProps) => {
     {
       image: images.coroa15,
       title: "Coroa Ternura",
-      description: "Composição suave com rosas cor-de-rosa, margaridas brancas e flores delicadas, expressando carinho e ternura.",
-      price: "R$ 450",
+      description: "Composição suave, , expressando carinho e ternura.",
+      price: "R$ 900",
     },
     {
       image: images.coroa16,
       title: "Coroa Glória",
-      description: "Arranjo grandioso com rosas vermelhas, lírios brancos e folhagens nobres para uma homenagem marcante.",
-      price: "R$ 1.200",
+      description: "Arranjo grandioso com rosas, lírios brancos e folhagens nobres para uma homenagem marcante.",
+      price: "R$ 900",
       tag: "Luxo",
     },
   ];
