@@ -83,7 +83,7 @@ const Catalog = ({ images }: CatalogProps) => {
     {
       image: images.coroa10,
       title: "Coroa Esperança",
-      description: "Arranjo delicado com rosas cor-de-rosa, lírios brancos e folhagens verdes, simbolizando esperança e renovação.",
+      description: "Coroa delicada com flores amarelas, lírios brancos e folhagens verdes, simbolizando esperança e renovação.",
       price: "R$ 350",
     },
     {
