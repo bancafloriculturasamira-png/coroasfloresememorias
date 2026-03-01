@@ -1,7 +1,36 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, Clock, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Clock, MapPin, MessageCircle, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({ nome: "", telefone: "", local_entrega: "", mensagem: "" });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.nome.trim() || !form.telefone.trim() || !form.local_entrega.trim()) {
+      toast({ title: "Preencha todos os campos obrigatórios", variant: "destructive" });
+      return;
+    }
+    setLoading(true);
+    const { error } = await supabase.from("contact_submissions").insert({
+      nome: form.nome.trim(),
+      telefone: form.telefone.trim(),
+      local_entrega: form.local_entrega.trim(),
+      mensagem: form.mensagem.trim() || null,
+    });
+    setLoading(false);
+    if (error) {
+      toast({ title: "Erro ao enviar solicitação", description: "Tente novamente.", variant: "destructive" });
+    } else {
+      toast({ title: "Solicitação enviada com sucesso!", description: "Entraremos em contato em breve." });
+      setForm({ nome: "", telefone: "", local_entrega: "", mensagem: "" });
+    }
+  };
+
   return (
     <section id="contato" className="py-20 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
@@ -53,42 +82,46 @@ const Contact = () => {
 
           <div className="bg-card text-card-foreground p-8 rounded-lg shadow-card-hover">
             <h3 className="font-serif text-2xl font-bold mb-6">Solicite um Orçamento</h3>
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium mb-2">Nome Completo</label>
                 <input
                   type="text"
+                  value={form.nome}
+                  onChange={(e) => setForm({ ...form, nome: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   placeholder="Seu nome" />
-
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Telefone / WhatsApp</label>
                 <input
                   type="tel"
+                  value={form.telefone}
+                  onChange={(e) => setForm({ ...form, telefone: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   placeholder="(11) 99999-9999" />
-
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Local de Entrega</label>
                 <input
                   type="text"
+                  value={form.local_entrega}
+                  onChange={(e) => setForm({ ...form, local_entrega: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   placeholder="Cidade, Estado ou Cemitério" />
-
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Mensagem (Opcional)</label>
                 <textarea
+                  value={form.mensagem}
+                  onChange={(e) => setForm({ ...form, mensagem: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
                   rows={3}
                   placeholder="Detalhes adicionais..." />
-
               </div>
-              <Button type="submit" size="lg" className="w-full gap-2">
-                <MessageCircle className="w-5 h-5" />
-                Enviar Solicitação
+              <Button type="submit" size="lg" className="w-full gap-2" disabled={loading}>
+                {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <MessageCircle className="w-5 h-5" />}
+                {loading ? "Enviando..." : "Enviar Solicitação"}
               </Button>
             </form>
           </div>
