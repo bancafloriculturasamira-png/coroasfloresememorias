@@ -53,7 +53,7 @@ const Catalog = ({ images }: CatalogProps) => {
       image: images.coroa5,
       title: "Coroa Gratidão",
       description: "Coroa delicada com gerberas coloridas, crisântemos e folhagens verdes, transmitindo gratidão e carinho.",
-      price: "R$ 300",
+      price: "R$ 250",
     },
     {
       image: images.coroa6,
