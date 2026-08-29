@@ -34,7 +34,7 @@ const ProductCard = ({ image, title, description, price, tag }: ProductCardProps
           </div>
           <Button size="sm" className="gap-2" asChild>
             <a
-              href={`https://wa.me/5511913228722?text=${encodeURIComponent(`Olá! Tenho interesse na ${title} - ${price}. Gostaria de mais informações.`)}`}
+              href={`https://wa.me/5511933758166?text=${encodeURIComponent(`Olá! Tenho interesse na ${title} - ${price}. Gostaria de mais informações.`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
