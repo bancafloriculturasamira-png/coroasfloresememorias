@@ -39,9 +39,9 @@ const Hero = ({ heroImage }: HeroProps) => {
               <a href="#catalogo">Ver Catálogo</a>
             </Button>
             <Button size="lg" variant="hero" className="text-lg px-8 py-6" asChild>
-              <a href="tel:+5511913228722">
+              <a href="tel:+5511933758166">
                 <Phone className="w-5 h-5 mr-2" />
-                (11) 91322-8722
+                (11) 93375-8166
               </a>
             </Button>
           </div>

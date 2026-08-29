@@ -21,9 +21,9 @@ const Header = () => {
           </nav>
 
           <Button size="sm" className="gap-2" asChild>
-            <a href="tel:+5511913228722">
+            <a href="tel:+5511933758166">
               <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">(11) 91322-8722</span>
+              <span className="hidden sm:inline">(11) 93375-8166</span>
               <span className="sm:hidden">Ligar</span>
             </a>
           </Button>
