@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Import images
 import heroImage from "@/assets/hero-flowers.jpg";
@@ -55,7 +56,8 @@ const Index = () => {
         <Testimonials />
         <Contact />
       </main>
-      <Footer />
+<Footer />
+      <WhatsAppButton />
     </div>
   );
 };
