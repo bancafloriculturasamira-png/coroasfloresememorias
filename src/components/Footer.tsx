@@ -15,9 +15,13 @@ const Footer = () => {
 
 
             </p>
-            <div className="flex items-center gap-2 text-background/60 text-sm">
+<div className="flex items-center gap-2 text-background/60 text-sm">
               <Heart className="w-4 h-4 text-accent" fill="currentColor" />
               <span>Feito com amor e respeito</span>
+            </div>
+            <div className="text-background/60 text-sm space-y-1">
+              <p>CNPJ: 45.948.250/0001-96</p>
+              <p>Rua Tupi, 168 - Santa Cecília</p>
             </div>
           </div>
 
