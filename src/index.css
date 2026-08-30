@@ -34,7 +34,11 @@ All colors MUST be HSL.
 
     --border: 40 20% 88%;
     --input: 40 20% 88%;
-    --ring: 150 35% 30%;
+--ring: 150 35% 30%;
+
+    /* WhatsApp brand */
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 100%;
 
     --radius: 0.75rem;
 
@@ -106,5 +110,30 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .whatsapp-float {
+    @apply fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-card-hover transition-transform duration-300 hover:scale-110;
+    background-color: hsl(var(--whatsapp));
+    color: hsl(var(--whatsapp-foreground));
+    animation: whatsapp-pulse 2.5s infinite;
+  }
+
+  .whatsapp-float:hover {
+    animation: none;
+  }
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 0 0 0 hsl(var(--whatsapp) / 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 18px hsl(var(--whatsapp) / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 hsl(var(--whatsapp) / 0);
   }
 }
