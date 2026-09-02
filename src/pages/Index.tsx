@@ -1,3 +1,4 @@
+import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Catalog from "@/components/Catalog";
@@ -29,6 +30,7 @@ import coroaGloria from "@/assets/coroa-gloria.jpg";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <AnnouncementBar />
       <Header />
       <main>
         <Hero heroImage={heroImage} />
