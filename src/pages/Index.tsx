@@ -26,6 +26,8 @@ import coroaPureza from "@/assets/coroa-pureza.jpg";
 import coroaResplendor from "@/assets/coroa-resplendor.jpg";
 import coroaTernura from "@/assets/coroa-ternura.jpg";
 import coroaGloria from "@/assets/coroa-gloria.jpg";
+import coroaCarinhoAsset from "@/assets/coroa-carinho.jpg.asset.json";
+import coroaAfetoAsset from "@/assets/coroa-afeto.jpg.asset.json";
 
 const Index = () => {
   return (
@@ -52,6 +54,8 @@ const Index = () => {
             coroa14: coroaResplendor,
             coroa15: coroaTernura,
             coroa16: coroaGloria,
+            coroa17: coroaCarinhoAsset.url,
+            coroa18: coroaAfetoAsset.url,
           }}
         />
         <HowItWorks />
