@@ -31,6 +31,18 @@ const Header = () => {
             </a>
           </Button>
         </div>
+
+        <nav className="flex md:hidden items-center justify-center gap-6 h-11 border-t border-border" aria-label="Menu móvel">
+          <a href="#catalogo" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Catálogo
+          </a>
+          <a href="#dizeres-faixa" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Dizeres/faixa
+          </a>
+          <a href="#contato" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Contato
+          </a>
+        </nav>
       </div>
     </header>);};
 

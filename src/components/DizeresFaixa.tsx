@@ -65,7 +65,7 @@ const grupos = [
 
 const DizeresFaixa = () => {
   return (
-    <section id="dizeres-faixa" className="py-20 bg-background scroll-mt-28">
+    <section id="dizeres-faixa" className="py-20 bg-background scroll-mt-40 md:scroll-mt-28">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-accent font-medium text-sm uppercase tracking-wider">
