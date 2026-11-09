@@ -111,7 +111,7 @@ const Contact = () => {
                   placeholder="Cidade, Estado ou Cemitério" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Mensagem (Opcional)</label>
+                <label className="block text-sm font-medium mb-2">Dizeres da Faixa</label>
                 <textarea
                   value={form.mensagem}
                   onChange={(e) => setForm({ ...form, mensagem: e.target.value })}
