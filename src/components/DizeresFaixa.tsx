@@ -87,9 +87,10 @@ const DizeresFaixa = () => {
                 <h3 className="font-serif text-2xl font-semibold text-foreground">{grupo.titulo}</h3>
               </div>
               <ol className="divide-y divide-border">
-                {grupo.mensagens.map((mensagem) => {
-                  numero += 1;
-                  const itemNumero = numero;
+                {grupo.mensagens.map((mensagem, indice) => {
+                  const itemNumero = grupos
+                    .slice(0, grupoIndex)
+                    .reduce((total, item) => total + item.mensagens.length, 0) + indice + 1;
                   return (
                     <li key={itemNumero} className="flex gap-4 px-6 py-4">
                       <span className="flex-shrink-0 w-7 h-7 rounded-full bg-secondary text-primary text-sm font-semibold flex items-center justify-center">
