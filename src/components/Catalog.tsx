@@ -18,6 +18,8 @@ interface CatalogProps {
     coroa14: string;
     coroa15: string;
     coroa16: string;
+    coroa17: string;
+    coroa18: string;
   };
 }
 
@@ -124,6 +126,18 @@ const Catalog = ({ images }: CatalogProps) => {
       description: "Arranjo grandioso com rosas, lírios brancos e folhagens nobres para uma homenagem marcante.",
       price: "R$ 900",
       tag: "Luxo",
+    },
+    {
+      image: images.coroa17,
+      title: "Coroa Carinho",
+      description: "Arranjo redondo todo em flores brancas, com crisântemos, margaridas e folhagens verdes, transmitindo paz e singeleza.",
+      price: "R$ 169,99",
+    },
+    {
+      image: images.coroa18,
+      title: "Coroa Afeto",
+      description: "Arranjo redondo e colorido com crisântemos brancos, flores amarelas, rosas e lilases, para uma homenagem afetuosa.",
+      price: "R$ 169,99",
     },
   ];
 
