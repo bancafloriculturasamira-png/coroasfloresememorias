@@ -14,7 +14,7 @@ const steps = [
   {
     icon: Truck,
     title: "Entrega Rápida",
-    description: "Entregamos em até 2 horas na região metropolitana.",
+    description: "Entregamos em até 1:30 horas na região metropolitana.",
   },
   {
     icon: Heart,
