@@ -63,8 +63,6 @@ const grupos = [
   },
 ];
 
-let numero = 0;
-
 const DizeresFaixa = () => {
   return (
     <section id="dizeres-faixa" className="py-20 bg-background scroll-mt-28">

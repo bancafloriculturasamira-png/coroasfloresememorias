@@ -60,6 +60,7 @@ const Index = () => {
           }}
         />
         <HowItWorks />
+        <DizeresFaixa />
         <Testimonials />
         <Contact />
       </main>
